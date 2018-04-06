@@ -1,0 +1,59 @@
+﻿<Window
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:StewLedger.ViewModel"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"     
+      x:Class="StewLedger.View.BankView"
+      mc:Ignorable="d" d:DesignWidth="600"
+      Title="BankView" Height="514.912" Width="600">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="323*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,31,0,70" Orientation="Vertical" Grid.RowSpan="2" >
+            <StackPanel.DataContext>
+                <vm:BankVM/>
+            </StackPanel.DataContext>
+            
+            
+            <TextBlock TextWrapping="Wrap" Text="Name" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbName" Height="23" TextWrapping="Wrap"  Margin="10,10,10,0" Text="{Binding BankModel.Name, Mode=TwoWay}">
+            </TextBox>
+            <TextBlock TextWrapping="Wrap" Text="Phone Number" Margin="10,5,10,0"/>
+            <xctk:MaskedTextBox x:Name="tbPhoneNumber" Height="23" Margin="10,10,10,0" Mask="(000)000-0000" Text="{Binding BankModel.PhoneNumber, Mode=TwoWay}"/>
+            <TextBlock TextWrapping="Wrap" Text="Routing Number" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbRoutingNumber" Height="23" TextWrapping="Wrap" Text="{Binding BankModel.RoutingNumber, Mode=TwoWay}" Margin="10,10,10,0"/>
+            <TextBlock TextWrapping="Wrap" Text="City" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbCity" Height="23" TextWrapping="Wrap"  Margin="10,10,10,0" Text="{Binding BankModel.City, Mode=TwoWay}"/>
+            <TextBlock TextWrapping="Wrap" Text="State" Height="22" Margin="10,5,10,0"/>
+
+            <ComboBox x:Name="cmbStates" Margin="10,10,10,0" SelectedItem="{Binding BankModel.State, Mode=TwoWay}">
+                <ComboBox.ItemsSource>
+                    <vm:StateList/>
+                </ComboBox.ItemsSource>
+            </ComboBox>
+            <TextBlock TextWrapping="Wrap" Text="Zipcode" Margin="10,5,10,0"/>
+            <TextBox x:Name="tbZip" Height="23" TextWrapping="Wrap" Text="{Binding BankModel.Zipcode, Mode=TwoWay}" 
+                     Margin="10,10,10,0" MaxLength="5"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnAdd" Content="Add Bank" HorizontalAlignment="Left" Margin="39,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" 
+                 CommandParameter="{Binding BankModel, Mode=TwoWay}"
+                Command="{Binding AddNewBankCmd}" 
+               />
+                <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="160,22,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="btnExit_Click"/>
+            </StackPanel>
+        </StackPanel>
+       
+
+
+       
+    </Grid>
+</Window>

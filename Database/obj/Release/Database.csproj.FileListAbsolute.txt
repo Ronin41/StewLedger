@@ -1,0 +1,16 @@
+D:\Developement\StewLedger\Database\bin\Release\Database.dll.config
+D:\Developement\StewLedger\Database\bin\Release\Database.dll
+D:\Developement\StewLedger\Database\bin\Release\Database.pdb
+D:\Developement\StewLedger\Database\bin\Release\EntityFramework.dll
+D:\Developement\StewLedger\Database\bin\Release\EntityFramework.SqlServer.dll
+D:\Developement\StewLedger\Database\bin\Release\System.Data.SQLite.dll
+D:\Developement\StewLedger\Database\bin\Release\System.Data.SQLite.EF6.dll
+D:\Developement\StewLedger\Database\bin\Release\System.Data.SQLite.Linq.dll
+D:\Developement\StewLedger\Database\bin\Release\EntityFramework.xml
+D:\Developement\StewLedger\Database\bin\Release\EntityFramework.SqlServer.xml
+D:\Developement\StewLedger\Database\bin\Release\System.Data.SQLite.xml
+D:\Developement\StewLedger\Database\bin\Release\System.Data.SQLite.dll.config
+D:\Developement\StewLedger\Database\obj\Release\Database.csprojResolveAssemblyReference.cache
+D:\Developement\StewLedger\Database\obj\Release\Database.csproj.CoreCompileInputs.cache
+D:\Developement\StewLedger\Database\obj\Release\Database.dll
+D:\Developement\StewLedger\Database\obj\Release\Database.pdb

@@ -1,0 +1,16 @@
+D:\Developement\StewLedger\Database\bin\x64\Debug\Database.dll.config
+D:\Developement\StewLedger\Database\bin\x64\Debug\Database.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\Database.pdb
+D:\Developement\StewLedger\Database\bin\x64\Debug\EntityFramework.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\EntityFramework.SqlServer.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\System.Data.SQLite.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\System.Data.SQLite.EF6.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\System.Data.SQLite.Linq.dll
+D:\Developement\StewLedger\Database\bin\x64\Debug\EntityFramework.xml
+D:\Developement\StewLedger\Database\bin\x64\Debug\EntityFramework.SqlServer.xml
+D:\Developement\StewLedger\Database\bin\x64\Debug\System.Data.SQLite.xml
+D:\Developement\StewLedger\Database\bin\x64\Debug\System.Data.SQLite.dll.config
+D:\Developement\StewLedger\Database\obj\x64\Debug\Database.csprojResolveAssemblyReference.cache
+D:\Developement\StewLedger\Database\obj\x64\Debug\Database.csproj.CoreCompileInputs.cache
+D:\Developement\StewLedger\Database\obj\x64\Debug\Database.dll
+D:\Developement\StewLedger\Database\obj\x64\Debug\Database.pdb
